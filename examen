@@ -1,0 +1,23 @@
+#include<stdio.h>
+void imprimir(int, int);
+
+int main(){
+	
+	int ini,final;
+	printf("Ingresa el 5\n");
+	scanf("%d",&ini);
+	printf("\nIngresar el un numero mayor de la susecion\n");
+	scanf("%d",&final);
+	
+	imprimir(ini, final);
+	return 0;
+}
+
+void imprimir(int inicio, int final){
+	if(inicio < final){
+		printf("\n%d ",inicio);
+		inicio=inicio*3;
+		imprimir(inicio,final);
+	}
+
+ }
